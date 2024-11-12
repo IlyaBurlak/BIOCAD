@@ -8,15 +8,24 @@
 </head>
 <body>
     <nav class="nav">
-        <img class="nav__logo" src="/img/main/logo.svg">
+        <img class="nav__logo" src="/img/main/logo.svg" alt="botanique">
 
         <div class="nav__menu">
-            <button class="menu__btn menu_btn--active" onclick="navigate('main.html')">ГЛАВНАЯ</button>
+            <button class="menu__btn menu__btn--active" onclick="navigate('main.html')">ГЛАВНАЯ</button>
             <button class="menu__btn "onclick="navigate('analytics.html')">АНАЛИТИКА</button>
         </div>
 
        <img class="nav__ava-img" src="/img/main/ava.svg">
     </nav>
+
+
+    <main class="main">
+        <div class="main__search">
+            <input class="search__input" type="text" placeholder="Поиск прибора в Botanique по номеру, названию, подраздилению и др.">
+            <img class="search_qr" src="/img/main/qr_code_scanner.svg" alt="">
+        </div>
+        <div class="content-item--loves">Itmens</div>
+    </main>
 
 <div id="content"></div>
 

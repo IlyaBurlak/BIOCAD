@@ -40,11 +40,11 @@ html{
     cursor: pointer;
 }
 
-.menu_btn--active{
+.menu__btn--active{
     color: var(--green);
 }
 
-.menu_btn--active:after{
+.menu__btn--active:after{
     content: '';
     position: absolute;
     left: 0;
@@ -59,5 +59,43 @@ html{
     padding: 8px 24px 8px 0;
     height: 32px;
     width: 32px;
+
+    cursor: pointer;
+
 }
+
+/* Main */
+
+.main{
+
+}
+
+/* Search */
+
+
+.main__search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 936px;
+    height: 56px;
+    margin: 52px auto 48px;
+    border: 1px solid #A7A7A7;
+}
+
+.search__input {
+    margin: 16px;
+    flex-grow: 1;
+    height: 24px;
+    border: none;
+    background-color: transparent;
+}
+
+.search_qr {
+    padding: 16px;
+    width: 24px;
+}
+
+
+
 
