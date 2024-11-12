@@ -1,10 +1,18 @@
 {
-  "name": "BiOCAD",
+  "name": "biocad",
   "version": "1.0.0",
-  "description": "",
-  "main": "public/js/index.js",
+  "main": "src/js/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "private": true
+  "private": true,
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "express": "^4.21.1",
+    "pg": "^8.13.1"
+  }
 }

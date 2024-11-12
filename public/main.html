@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная страница</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav class="nav">
@@ -24,12 +24,25 @@
             <input class="search__input" type="text" placeholder="Поиск прибора в Botanique по номеру, названию, подраздилению и др.">
             <img class="search_qr" src="/img/main/qr_code_scanner.svg" alt="">
         </div>
-        <div class="content-item--loves">Itmens</div>
+
+
+        <div class="content-item--loves">
+            <table id="deviceTable">
+                <thead>
+                <tr>
+                    <th>Название</th>
+                    <th>Статус</th>
+                </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
     </main>
 
 <div id="content"></div>
 
 
-<script src="../js/index.js"></script>
+<script src="../src/js/table.js"></script>
 </body>
 </html>
