@@ -7,11 +7,15 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <h1>Главная страница</h1>
+    <nav class="nav">
+        <img class="nav__logo" src="/img/main/logo.svg">
 
-    <nav>
-        <button onclick="navigate('main.html')">Главная страница</button>
-        <button onclick="navigate('analytics.html')">Аналитика</button>
+        <div class="nav__menu">
+            <button class="menu__btn menu_btn--active" onclick="navigate('main.html')">ГЛАВНАЯ</button>
+            <button class="menu__btn "onclick="navigate('analytics.html')">АНАЛИТИКА</button>
+        </div>
+
+       <img class="nav__ava-img" src="/img/main/ava.svg">
     </nav>
 
 <div id="content"></div>
