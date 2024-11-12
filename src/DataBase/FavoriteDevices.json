@@ -1,0 +1,37 @@
+[
+  {
+    "id": "S1.4.I14-9.001",
+    "name": "рН-метр Mettler Toledo International, Inc. SevenCompact S220",
+    "status": "Свободен",
+    "icon": "/public/img/tableImg/pH.svg",
+    "bellIcon": "/public/img/tableImg/bell/ActiveBell.svg"
+  },
+  {
+    "id": "S1.4.I14-9.002",
+    "name": "Спектрофотометр Varian, Cary 50 Bio",
+    "status": "Свободен",
+    "icon": "/public/img/tableImg/Spectr.svg",
+    "bellIcon": "/public/img/tableImg/bell/ActiveBell.svg"
+  },
+  {
+    "id": "S1.4.I14-9.003",
+    "name": "Титратор",
+    "status": "Свободен",
+    "icon": "/public/img/tableImg/Titrator.svg",
+    "bellIcon": "/public/img/tableImg/bell/DefoltBell.svg"
+  },
+  {
+    "id": "S1.4.I14-9.004",
+    "name": "Коагулометр Tosag, KC 4 Delta",
+    "status": "Свободен",
+    "icon": "/public/img/tableImg/Kaogulometr.svg",
+    "bellIcon": "/public/img/tableImg/bell/PasiveBell.svg"
+  },
+  {
+    "id": "S1.4.I14-9.005",
+    "name": "Коагулометр Tosag, KC 4 Delta",
+    "status": "Свободен",
+    "icon": "/public/img/tableImg/Kaogulometr.svg",
+    "bellIcon": "/public/img/tableImg/bell/PasiveBell.svg"
+  }
+]

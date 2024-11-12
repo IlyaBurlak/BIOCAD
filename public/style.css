@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
+    --black: #000000;
     --white: #ffffff;
     --green: #23B04A;
 
@@ -95,6 +96,55 @@ html{
     padding: 16px;
     width: 24px;
 }
+
+
+.content-item--loves{
+    display: block;
+    width: 925px;
+    margin: 48px auto;
+}
+
+.content-item--loves h2 {
+    color: var(--black);
+    opacity: 60%;
+    margin: 0 0 0 16px;
+}
+
+/* Table */
+
+.header-table{
+    display: flex;
+}
+
+#deviceTable {
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 16px auto;
+    align-items: center;
+    width: 925px;
+}
+
+#deviceTable th, #deviceTable td {
+    padding: 8px;
+    text-align: left;
+}
+
+#deviceTable th {
+    background-color: #f2f2f2;
+}
+
+
+.icon-cell{
+    height: 48px;
+    width: 48px;
+}
+.bell-cell{
+    height: 24px;
+    width: 24px;
+}
+
 
 
 

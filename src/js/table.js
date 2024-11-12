@@ -1,8 +1,3 @@
-const devices = [
-    { name: 'pH метр Mettler Toledo International, Inc. SevenCompact S220T', status: 'Свободен', icon: '/img/tableImg/pH.svg' ,  bellIcon: '/img/tableImg/bell/ActiveBell.svg'},
-    { name: 'Спектрофотометр Varian, Cary 50 Bio', status: 'Свободен', icon: '/img/tableImg/Spectr.svg', bellIcon: 'img/tableImg/bell/ActiveBell.svg'},
-];
-
 const possibleStatuses = ['Свободен', 'В работе', 'В ремонте'];
 
 const deviceTable = document.getElementById('deviceTable');
@@ -18,6 +13,8 @@ function renderDevices(devicesData) {
         const statusCell = document.createElement('td');
         const bellCell = document.createElement('td');
 
+        iconCell.className = 'icon-cell';
+        bellCell.className = 'bell-cell';
 
 
         const iconImg = document.createElement('img');
@@ -25,9 +22,8 @@ function renderDevices(devicesData) {
         iconCell.appendChild(iconImg);
 
         const bellIcon = document.createElement('img');
-        bellIcon.src = device.bellIcon
+        bellIcon.src = device.bellIcon;
         bellCell.appendChild(bellIcon);
-
 
         nameCell.textContent = device.name;
 
@@ -44,15 +40,29 @@ function renderDevices(devicesData) {
 
         statusSelect.addEventListener('change', (event) => {
             const newStatus = event.target.value;
-            device.selectedStatus = newStatus;
+            device.status = newStatus;
         });
         statusCell.appendChild(statusSelect);
 
         row.appendChild(iconCell);
         row.appendChild(nameCell);
         row.appendChild(statusCell);
+        row.appendChild(bellCell);
         tableBody.appendChild(row);
     });
 }
 
-renderDevices(devices);
+async function loadDevices() {
+    try {
+        const response = await fetch('/src/DataBase/FavoriteDevices.json');
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        const devices = await response.json();
+        renderDevices(devices);
+    } catch (error) {
+        console.error('Ошибка при загрузке данных:', error);
+    }
+}
+
+loadDevices();
