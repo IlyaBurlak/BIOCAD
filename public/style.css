@@ -183,6 +183,36 @@ html{
 
 /* Select in table*/
 
+select {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: var(--black);
+    opacity: 60%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 2px 24px 2px 8px;
+    appearance: none;
+    background-image: url('/public/img/tableImg/Tringle.svg');
+    background-repeat: no-repeat;
+    background-position: calc(91px) ;
+    background-size: 10px 10px;
+}
+
+select option {
+    padding: 8px;
+}
+
+/* Псевдоэлемент для создания кастомной стрелки */
+/*select::after {*/
+/*    content: "\25BC"; !* Unicode символ стрелки вниз *!*/
+/*    position: absolute;*/
+/*    top: 50%;*/
+/*    right: 10px;*/
+/*    transform: translateY(-50%);*/
+/*    pointer-events: none;*/
+/*}*/
+
 
 
 
