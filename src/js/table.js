@@ -13,8 +13,10 @@ function renderDevices(devicesData) {
         const statusCell = document.createElement('td');
         const bellCell = document.createElement('td');
 
-        iconCell.className = 'icon-cell';
-        bellCell.className = 'bell-cell';
+        iconCell.className = 'iconCell';
+        nameCell.className = 'nameCell';
+        statusCell.className = 'statusCell';
+        bellCell.className = 'bellCell';
 
 
         const iconImg = document.createElement('img');

@@ -124,27 +124,64 @@ html{
     margin: 16px auto;
     align-items: center;
     width: 925px;
+    border-collapse: collapse;
+    border: 1px solid #D8D8D8;
+    border-radius: 4px;
 }
+
 
 #deviceTable th, #deviceTable td {
     padding: 8px;
     text-align: left;
+
 }
 
-#deviceTable th {
-    background-color: #f2f2f2;
+#deviceTable tbody tr:not(:first-child) {
+    border-top: 1px solid #DDDDDD;
+
+}
+#deviceTable thead tr {
+    border-top: none;
 }
 
-
-.icon-cell{
+.iconCell{
     height: 48px;
     width: 48px;
 }
-.bell-cell{
+
+.nameCell{
+    width: 652px;
+    height: 40px;
+}
+
+.statusCell{
+    width: 97px;
+    height: 24px;
+}
+
+.bellCell{
+    padding: 8px;
+    margin-left: 16px;
     height: 24px;
     width: 24px;
 }
 
+.nameField{
+    color: var(--black);
+    opacity: 60%;
+    display: inline-flex;
+    width: 655px;
+}
+
+#deviceTable thead tr th.statusField {
+    color: var(--black);
+    opacity: 60%;
+    padding: 10px;
+    width: 70px;
+}
+
+
+/* Select in table*/
 
 
 
