@@ -92,9 +92,13 @@ html{
     background-color: transparent;
 }
 
+.search__input:focus{
+    outline: none;
+}
 .search_qr {
-    padding: 16px;
+    margin: 16px;
     width: 24px;
+    cursor: pointer;
 }
 
 
@@ -166,14 +170,20 @@ html{
     width: 24px;
 }
 
-.nameField{
+#deviceTable thead tr th.nameField{
+    font-weight: 500;
+    font-style: oblique ;
     color: var(--black);
     opacity: 60%;
     display: inline-flex;
     width: 655px;
+    padding-top: 10px;
+
 }
 
 #deviceTable thead tr th.statusField {
+    font-weight: 500;
+    font-style: oblique;
     color: var(--black);
     opacity: 60%;
     padding: 10px;
@@ -185,33 +195,24 @@ html{
 
 select {
     font-family: Arial, sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     color: var(--black);
     opacity: 60%;
     background-color: #fff;
-    border: 1px solid #ccc;
+    border: 1px solid #9E9E9E;
     border-radius: 4px;
-    padding: 2px 24px 2px 8px;
+    padding: 4px 15px 4px 8px;
     appearance: none;
     background-image: url('/public/img/tableImg/Tringle.svg');
     background-repeat: no-repeat;
-    background-position: calc(91px) ;
-    background-size: 10px 10px;
+    background-position: calc(80px) ;
+    background-size: 8px 8px;
 }
 
 select option {
     padding: 8px;
 }
 
-/* Псевдоэлемент для создания кастомной стрелки */
-/*select::after {*/
-/*    content: "\25BC"; !* Unicode символ стрелки вниз *!*/
-/*    position: absolute;*/
-/*    top: 50%;*/
-/*    right: 10px;*/
-/*    transform: translateY(-50%);*/
-/*    pointer-events: none;*/
-/*}*/
 
 
 
